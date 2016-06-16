@@ -12,6 +12,6 @@ namespace APM.WebAPI.Models
         public string Description { get; set; }
         public decimal Price { get; set; }
         public DateTime ReleaseDate { get; set; }
-        public string Productcode { get; set; }
+        public string Productcode { get; set; } 
     }
 }
