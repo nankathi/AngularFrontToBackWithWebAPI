@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Web.Http;
 using Microsoft.Owin.Security.OAuth;
+//using Microsoft.AspNet.WebApi.Cors;
 using Newtonsoft.Json.Serialization;
 
 namespace APM.WebAPI
@@ -19,6 +20,10 @@ namespace APM.WebAPI
 
             // Web API routes
             config.MapHttpAttributeRoutes();
+
+
+           // config.EnableCors();
+            //var corsAttr = new EnableCorsAttribute()
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
